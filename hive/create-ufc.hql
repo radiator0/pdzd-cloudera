@@ -40,7 +40,7 @@ row format delimited fields terminated by ','
 CREATE TABLE IF NOT EXISTS Fights
 (
 	fightID int, 
-	date timestamp,
+	date date,
 	referee String,
 	weightClass String,
 	isTitleBout boolean,
