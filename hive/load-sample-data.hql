@@ -1,3 +1,4 @@
+use ufc;
 LOAD DATA LOCAL INPATH 'sample-data/Fighters.csv' OVERWRITE INTO TABLE Fighters;
 LOAD DATA LOCAL INPATH 'sample-data/Fights.csv' OVERWRITE INTO TABLE Fights;
 LOAD DATA LOCAL INPATH 'sample-data/Physiques.csv' OVERWRITE INTO TABLE Physiques;

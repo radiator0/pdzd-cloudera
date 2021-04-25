@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS Fighters
 	fighterID int, 
 	name String
 )
+row format delimited fields terminated by ','
 ;
 
 CREATE TABLE IF NOT EXISTS Physiques
@@ -17,6 +18,7 @@ CREATE TABLE IF NOT EXISTS Physiques
 	armReach int, 
 	heightDifference int
 )
+row format delimited fields terminated by ','
 ;
 
 CREATE TABLE IF NOT EXISTS Positions
@@ -24,6 +26,7 @@ CREATE TABLE IF NOT EXISTS Positions
 	positionID int, 
 	name String
 )
+row format delimited fields terminated by ','
 ;
 
 CREATE TABLE IF NOT EXISTS Results
@@ -31,6 +34,7 @@ CREATE TABLE IF NOT EXISTS Results
 	resultID int, 
 	decision String
 )
+row format delimited fields terminated by ','
 ;
 
 CREATE TABLE IF NOT EXISTS Fights
@@ -42,6 +46,7 @@ CREATE TABLE IF NOT EXISTS Fights
 	isTitleBout boolean,
 	finishedBy String
 )
+row format delimited fields terminated by ','
 ;
 
 CREATE TABLE IF NOT EXISTS Statistics
@@ -60,5 +65,6 @@ CREATE TABLE IF NOT EXISTS Statistics
 	resultID int,
 	positionID int
 )
+row format delimited fields terminated by ','
 ;
 
