@@ -1,0 +1,12 @@
+fightID,date,referee,weightClass,isTitleBout,finishedBy
+1,20.03.2021,Chris Tognoni,Bantamweight,yes,Decision - Unanimous
+2,20.03.2021,Chris Tognoni,Middleweight,no,KO/TKO
+3,20.03.2021,Chris Tognoni,Heavyweight,no,Submission
+4,20.03.2021,Chris Tognoni,Featherweight,no,Decision - Unanimous
+5,20.03.2021,Chris Tognoni,Featherweight,no,Submission
+6,13.03.2021,Chris Tognoni,Lightweight,no,KO/TKO
+7,13.03.2021,Chris Tognoni,Bantamweight,no,KO/TKO
+8,13.03.2021,Chris Tognoni,Bantamweight,no,Submission
+9,13.03.2021,Chris Tognoni,Middleweight,no,KO/TKO
+10,13.03.2021,Chris Tognoni,Heavyweight,no,KO/TKO
+11,13.03.2021,Chris Tognoni,Featherweight,yes,Submission

@@ -4,8 +4,7 @@ use ufc;
 CREATE TABLE IF NOT EXISTS Fighters
 (
 	fighterID int, 
-	firstName String, 
-	lastName String
+	name String
 )
 ;
 
