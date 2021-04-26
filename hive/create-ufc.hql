@@ -3,7 +3,7 @@ use ufc;
 
 CREATE TABLE IF NOT EXISTS Fighters
 (
-	fighterID int, 
+	fighter_ID int, 
 	name String
 )
 row format delimited fields terminated by ','
@@ -11,19 +11,19 @@ row format delimited fields terminated by ','
 
 CREATE TABLE IF NOT EXISTS Physiques
 (
-	physiqueID int, 
+	physique_ID int, 
 	height int, 
 	weight int, 
 	bmi int, 
-	armReach int, 
-	heightDifference int
+	arm_reach int, 
+	height_difference int
 )
 row format delimited fields terminated by ','
 ;
 
 CREATE TABLE IF NOT EXISTS Positions
 (
-	positionID int, 
+	position_ID int, 
 	name String
 )
 row format delimited fields terminated by ','
@@ -31,7 +31,7 @@ row format delimited fields terminated by ','
 
 CREATE TABLE IF NOT EXISTS Results
 (
-	resultID int, 
+	result_ID int, 
 	decision String
 )
 row format delimited fields terminated by ','
@@ -39,31 +39,31 @@ row format delimited fields terminated by ','
 
 CREATE TABLE IF NOT EXISTS Fights
 (
-	fightID int, 
+	fight_ID int, 
 	date date,
 	referee String,
-	weightClass String,
-	isTitleBout boolean,
-	finishedBy String
+	weight_class String,
+	is_title_bout boolean,
+	finished_by String
 )
 row format delimited fields terminated by ','
 ;
 
 CREATE TABLE IF NOT EXISTS Statistics
 (
-	statisticID int, 
-	headAttempts int, 
-	headLanded int, 
-	bodyAttempts int, 
-	bodyLanded int, 
-	legAttempts int, 
-	legLanded int, 
-	isWinner boolean,
-	fighterID int,
-	physiqueID int,
-	fightID int,
-	resultID int,
-	positionID int
+	statistic_ID int, 
+	head_attempts int, 
+	head_landed int, 
+	body_attempts int, 
+	body_landed int, 
+	leg_attempts int, 
+	leg_landed int, 
+	is_winner boolean,
+	fighter_ID int,
+	physique_ID int,
+	fight_ID int,
+	result_ID int,
+	position_ID int
 )
 row format delimited fields terminated by ','
 ;

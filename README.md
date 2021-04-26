@@ -3,10 +3,12 @@
 ### Hive
 Initialize tables and load sample data:
 ```bash
- hive -f hive/create-ufc.hql
- hive -f hive/load-sample-data.hql
+ cd hive
+ hive -f create-ufc.hql
+ hive -f load-sample-data.hql
 ```
 Drop tables 
 ```bash
+ cd hive
  hive -f hive/drop-ufc.hql
 ```
