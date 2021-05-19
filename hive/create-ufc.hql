@@ -52,7 +52,7 @@ row format delimited fields terminated by ','
 location '/ufc/final/fights.csv'
 ;
 
-CREATE TABLE IF NOT EXISTS Statistics
+CREATE EXTERNAL TABLE IF NOT EXISTS Statistics
 (
 	statistic_ID int, 
 	head_attempts int, 
