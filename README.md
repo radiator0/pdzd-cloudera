@@ -6,7 +6,7 @@ Initialize tables and load sample data:
  cd hive
  hive -f create-ufc.hql
  hive -f load-sample-data.hql #!!@@ Warning! OLD solution!
- hive -f upload-sample-to-hdfs.sh # NEW
+ sh upload-sample-to-hdfs.sh # NEW
 ```
 Drop tables 
 ```bash
