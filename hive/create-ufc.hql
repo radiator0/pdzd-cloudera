@@ -12,11 +12,9 @@ row format delimited fields terminated by ','
 CREATE TABLE IF NOT EXISTS Physiques
 (
 	physique_ID int, 
-	height int, 
-	weight int, 
 	bmi int, 
 	arm_reach int, 
-	height_difference int
+	height_difference double
 )
 row format delimited fields terminated by ','
 ;
