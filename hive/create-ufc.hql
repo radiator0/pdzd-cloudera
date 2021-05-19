@@ -3,7 +3,7 @@ use ufc;
 
 CREATE EXTERNAL TABLE IF NOT EXISTS Fighters
 (
-	fighter_ID int, 
+	fighter_ID String, 
 	name String
 )
 row format delimited fields terminated by '\t'
@@ -12,7 +12,7 @@ location '/ufc/final/fighters'
 
 CREATE EXTERNAL TABLE IF NOT EXISTS Physiques
 (
-	physique_ID int, 
+	physique_ID String, 
 	bmi int, 
 	arm_reach int, 
 	height_difference double
@@ -23,7 +23,7 @@ location '/ufc/final/physiques'
 
 CREATE EXTERNAL TABLE IF NOT EXISTS Positions
 (
-	position_ID int, 
+	position_ID String, 
 	name String
 )
 row format delimited fields terminated by '\t'
@@ -32,7 +32,7 @@ location '/ufc/final/positions'
 
 CREATE EXTERNAL TABLE IF NOT EXISTS Results
 (
-	result_ID int, 
+	result_ID String, 
 	decision String
 )
 row format delimited fields terminated by '\t'
@@ -41,7 +41,7 @@ location '/ufc/final/results'
 
 CREATE EXTERNAL TABLE IF NOT EXISTS Fights
 (
-	fight_ID int, 
+	fight_ID String, 
 	date date,
 	referee String,
 	weight_class String,
@@ -54,7 +54,7 @@ location '/ufc/final/fights'
 
 CREATE EXTERNAL TABLE IF NOT EXISTS Statistics
 (
-	statistic_ID int, 
+	statistic_ID String, 
 	head_attempts int, 
 	head_landed int, 
 	body_attempts int, 
