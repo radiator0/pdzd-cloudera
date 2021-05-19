@@ -6,7 +6,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS Fighters
 	fighter_ID int, 
 	name String
 )
-row format delimited fields terminated by ','
+row format delimited fields terminated by '\t'
 location '/ufc/final/fighters'
 ;
 
@@ -17,7 +17,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS Physiques
 	arm_reach int, 
 	height_difference double
 )
-row format delimited fields terminated by ','
+row format delimited fields terminated by '\t'
 location '/ufc/final/physiques'
 ;
 
@@ -26,7 +26,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS Positions
 	position_ID int, 
 	name String
 )
-row format delimited fields terminated by ','
+row format delimited fields terminated by '\t'
 location '/ufc/final/positions'
 ;
 
@@ -35,7 +35,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS Results
 	result_ID int, 
 	decision String
 )
-row format delimited fields terminated by ','
+row format delimited fields terminated by '\t'
 location '/ufc/final/results'
 ;
 
@@ -48,7 +48,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS Fights
 	is_title_bout boolean,
 	finished_by String
 )
-row format delimited fields terminated by ','
+row format delimited fields terminated by '\t'
 location '/ufc/final/fights'
 ;
 
@@ -68,7 +68,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS Statistics
 	result_ID int,
 	position_ID int
 )
-row format delimited fields terminated by ','
+row format delimited fields terminated by '\t'
 location '/ufc/final/statistics'
 ;
 
