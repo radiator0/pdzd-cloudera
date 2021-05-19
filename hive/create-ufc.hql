@@ -62,11 +62,11 @@ CREATE EXTERNAL TABLE IF NOT EXISTS Statistics
 	leg_attempts int, 
 	leg_landed int, 
 	is_winner boolean,
-	fighter_ID int,
-	physique_ID int,
-	fight_ID int,
-	result_ID int,
-	position_ID int
+	fighter_ID String,
+	physique_ID String,
+	fight_ID String,
+	result_ID String,
+	position_ID String
 )
 row format delimited fields terminated by '\t'
 location '/ufc/final/statistics'
