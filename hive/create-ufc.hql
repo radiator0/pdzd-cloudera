@@ -1,15 +1,16 @@
 CREATE DATABASE IF NOT EXISTS ufc;
 use ufc;
 
-CREATE TABLE IF NOT EXISTS Fighters
+CREATE EXTERNAL TABLE IF NOT EXISTS Fighters
 (
 	fighter_ID int, 
 	name String
 )
 row format delimited fields terminated by ','
+location '/ufc/final/fighters.csv'
 ;
 
-CREATE TABLE IF NOT EXISTS Physiques
+CREATE EXTERNAL TABLE IF NOT EXISTS Physiques
 (
 	physique_ID int, 
 	bmi int, 
@@ -17,25 +18,28 @@ CREATE TABLE IF NOT EXISTS Physiques
 	height_difference double
 )
 row format delimited fields terminated by ','
+location '/ufc/final/physiques.csv'
 ;
 
-CREATE TABLE IF NOT EXISTS Positions
+CREATE EXTERNAL TABLE IF NOT EXISTS Positions
 (
 	position_ID int, 
 	name String
 )
 row format delimited fields terminated by ','
+location '/ufc/final/positions.csv'
 ;
 
-CREATE TABLE IF NOT EXISTS Results
+CREATE EXTERNAL TABLE IF NOT EXISTS Results
 (
 	result_ID int, 
 	decision String
 )
 row format delimited fields terminated by ','
+location '/ufc/final/results.csv'
 ;
 
-CREATE TABLE IF NOT EXISTS Fights
+CREATE EXTERNAL TABLE IF NOT EXISTS Fights
 (
 	fight_ID int, 
 	date date,
@@ -45,6 +49,7 @@ CREATE TABLE IF NOT EXISTS Fights
 	finished_by String
 )
 row format delimited fields terminated by ','
+location '/ufc/final/fights.csv'
 ;
 
 CREATE TABLE IF NOT EXISTS Statistics
@@ -64,5 +69,6 @@ CREATE TABLE IF NOT EXISTS Statistics
 	position_ID int
 )
 row format delimited fields terminated by ','
+location '/ufc/final/statistics.csv'
 ;
 
